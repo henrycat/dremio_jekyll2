@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Dremio v. Data Prep Products - Dremio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="shortcut icon" href="/favicons/favicon.ico">
+	<link rel="manifest" href="/favicons/manifest.json">
+	<link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon.png">
+	<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-config" content="/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans:300,400,600" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/css/style.css" >
+	<link rel="alternate" type="application/atom+xml" href="/feed.xml" title="News Feed">
+	<script src="http://localhost:5001/livereload.js"></script>
+<script src="http://0.0.0.0:5001/livereload.js"></script></head>
+
+<body class="">
+	<input type="checkbox" id="nav-toggle" name="nav-toggle" value="show">
+	<div id="bodywrap">
+		<header class="pagehead ">
+	<div class="container">
+		<h3><a href="/">Dremio</a></h3>
+		<label for="nav-toggle"><span></span>Toggle Navigation Menu</label>
+	</div>
+	<nav class="container">
+		<ul>
+			
+			  <li>
+			  	<a href="/product/" class=" ">Product</a>
+			  </li>
+			
+			  <li>
+			  	<a href="/resources/" class=" ">Resources</a>
+			  </li>
+			
+			  <li>
+			  	<a href="https://github.com/dremio" class=" ">GitHub</a>
+			  </li>
+			
+			  <li>
+			  	<a href="/careers/" class=" ">Careers</a>
+			  </li>
+			
+			  <li>
+			  	<a href="/download/" class="btn ">Download</a>
+			  </li>
+			
+		</ul>
+	</nav>
+</header>
+
+		<div id="content" class="">
+			<div class="content tall-section container ">
+				<div class="markdown ">
+					<h3 id="overview">Overview</h3>
+<p>Since the 90s, data architecture teams have distinguished between operational and analytical workloads with the terms online transactional processing (OLTP) and online analytical processing (OLAP). While the data and technologies we use for applications has evolved over the years, these terms are still very relevant today.</p>
+
+<p>OLTP workloads tend to be dominated by discrete operations that read, write, update, or delete a small number of records for each transaction. These applications tend to support many concurrent operations (thousands of queries per second), with low latency (&lt;10ms) and high availability (99.999% uptime). When these systems are down or slow, they can significantly impact the business. A good example is an ecommerce system for a popular retail site.</p>
+
+<p>In contrast, OLAP workloads are dominated by queries that read large numbers of records for each operation. These queries usually involve aggregations - SUM, MIN, MAX, AVG, etc. - across several dimensions of the data. OLAP queries tend to touch orders of magnitude more data than OLTP queries as they span most or all of the records for each operation. There tend to be fewer concurrent users, and the latency requirements tend to be more relaxed when compared to OLTP systems.</p>
+
+<h3 id="what-is-olap-on-hadoop">What is OLAP on Hadoop?</h3>
+<p>Many companies have embraced a Data Lake strategy for modern data analytics. In this model data from operational systems is moved to Hadoop for long term storage, processing, and analytics. Hadoop’s rich ecosystem of tools and integrations addresses a wide range of workloads through a shared resource model. Furthermore, Hadoop’s architecture and scalability allow companies to secure and centrally manage storage and compute resources of virtually any scale.</p>
+
+<p>OLAP on Hadoop is a category of products that leverage Hadoop to:</p>
+
+<ul>
+  <li>Stage raw data that has been moved to HDFS by a user-managed, external process.</li>
+  <li>Build and store data cubes that contain pre-computed measures across many dimensions of data to improve the speed of analytical queries</li>
+  <li>Execute queries using a distributed SQL engine running in the Hadoop cluster.</li>
+  <li>Provide proprietary BI features as part of their product, or ODBC drivers for third party BI tools.</li>
+</ul>
+
+<h3 id="what-is-dremio">What is Dremio?</h3>
+
+<p>Dremio is a new and unique approach to data analytics that let’s you do more with your data, with less effort, and at an end-to-end speed never before possible. Unlike OLAP on Hadoop products, Dremio is a comprehensive solution that eliminates the need for complex ETL, aggregation tables, or data cubes. Instead of cobbling together products from multiple vendors, Dremio lets you start seeing value in minutes, with a user experience whose quality is unprecedented in the Hadoop market.</p>
+
+<p>Dremio seamlessly accelerates all of your data, not just the things you’ve moved to HDFS, with optimized push downs to relational and nonrelational systems like MongoDB, Elasticsearch, and S3. Dremio lets you reach your data faster, with far less effort.</p>
+
+<p>Analysts connect to Dremio with their favorite BI tool (Tableau, Power BI, Qlik Sense, etc.) or language (SQL, R, Python, etc.). To an analyst, all data appears as tables, no matter what system it came from, with the full power of SQL to join, aggregate, transform and sort data across one or more data sources. And entirely transparent to your users, Dremio’s autonomous cache accelerates your data so that no matter how big it is or where it came from, it feels small, approachable, and instantaneous. Unlike cubes that only work for a small set of pre-defined queries, Dremio makes all your SQL fast, including ad-hoc row-level queries.</p>
+
+<p>Dremio runs as a distributed process in your Hadoop cluster, provisioned and managed by YARN. With Dremio you can query data that’s already in HDFS, or you can query external systems directly, removing the need for ETL.</p>
+
+<p>Unlike OLAP on Hadoop, Dremio allows you to:</p>
+
+<ul>
+  <li><strong>Run SQL on any data source.</strong> Including optimized push downs and parallel connectivity to non-relational systems like MongoDB, Elasticsearch, S3 and HDFS.</li>
+  <li><strong>Autonomously</strong> cache your data. Using columnar, compressed Apache Arrow for efficient in-memory analytical processing, and Apache Parquet for persistence.</li>
+  <li><strong>Accelerates</strong> all your BI queries. Ad-hoc queries on row-level data as well as aggregation queries.</li>
+  <li><strong>Integrated</strong> data curation. Easy for business users, yet sufficiently powerful for your data engineers, and fully integrated into Dremio.</li>
+  <li><strong>The Data Graph.</strong> Full visibility into your data lineage, from your data sources, through transformations, joining with other data sources, and sharing with other users.</li>
+</ul>
+
+<h3 id="terminology--concepts">Terminology &amp; Concepts</h3>
+<dl>
+  <dt>OLTP</dt>
+  <dd>Online Transaction Processing - workloads that represent high volumes of  low latency, transactional queries that create, read, update, or delete a few records.</dd>
+  <dt>OLAP</dt>
+  <dd>Online Analytical Processing - workloads that represent low volumes of large, complex queries that read large numbers of records.</dd>
+  <dt>Measure</dt>
+  <dd>An aggregation on a numeric field that summarizes the data, such as average, sum, min, max.</dd>
+  <dt>Dimension</dt>
+  <dd>A field by which data is summarized, such as a date, location, or attribute of the records. For example, the zip code when calculating the average income of citizens by zip code.</dd>
+  <dt>Cube</dt>
+  <dd>A physical data structure that stores pre-computed measures for many dimensions, and provides efficient access to this data.</dd>
+  <dt>SQL</dt>
+  <dd>Structured Query Language - the standard query language for relational databases.</dd>
+  <dt>MDX</dt>
+  <dd>Multidimensional eXpressions - a query language supported by some systems for cubes.</dd>
+  <dt>BI</dt>
+  <dd>Business Intelligence - a category of tools for non-technical users to build analytical queries and reports, and to visualize data.</dd>
+</dl>
+
+<h3 id="feature-comparison">Feature Comparison</h3>
+
+<table class="feature-table">
+  <thead>
+    <tr>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center">Dremio</th>
+      <th style="text-align: center">OLAP on Hadoop</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Runs in the Hadoop cluster</td>
+      <td style="text-align: center"><strong>optionally provisioned and managed via YARN</strong></td>
+      <td style="text-align: center"><strong>provisioned and managed via YARN</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Accelerates aggregation queries</td>
+      <td style="text-align: center"><strong>Queries are written for the logical structure of the data, and automatically rewritten to use accelerated aggregate data.</strong></td>
+      <td style="text-align: center"><strong>Requires queries to be written against the physical structure of the cubes.</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Accelerates ad-hoc queries</td>
+      <td style="text-align: center"><strong>Queries are written for the logical structure of the data, and automatically rewritten to use accelerated row-level</strong></td>
+      <td style="text-align: center"><del>Reports must be rewritten against source systems.Reports must be rewritten against source systems.Reports must be rewritten against source systems.Reports must be rewritten against source systems.</del></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Supports SQL</td>
+      <td style="text-align: center"><strong>Yes</strong></td>
+      <td style="text-align: center"><strong>Yes</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Supports MDX</td>
+      <td style="text-align: center"><del>No</del></td>
+      <td style="text-align: center"><strong>Yes</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Accelerates relational data sources</td>
+      <td style="text-align: center"><strong>Native optimizers with first class push downs of queries</strong></td>
+      <td style="text-align: center"><del>Requires third party ETL to move and prep data for HDFS</del></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Accelerates NoSQL data sources</td>
+      <td style="text-align: center"><strong>Native optimizers with first class push downs of queries</strong></td>
+      <td style="text-align: center"><del>Requires third party ETL to move and prep data for HDFS</del></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Integrated data curation</td>
+      <td style="text-align: center"><strong>Natural and intuitive UI for data discovery, curation, acceleration, and collaboration.</strong></td>
+      <td style="text-align: center"><del>Requires third party tool or custom scripts written by data engineers</del></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Integrated Data Graph</td>
+      <td style="text-align: center"><strong>Full visibility into data lineage and access patterns for governance and errr remediation.</strong></td>
+      <td style="text-align: center"><del>Requires third party tool or custom scripts written by data engineers</del></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">License</td>
+      <td style="text-align: center">Apache open source</td>
+      <td style="text-align: center">Proprietary</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="what-are-common-use-cases-for-dremio">What Are Common Use Cases for Dremio?</h3>
+
+<p>Dremio lets you reimagine your end to end analytical processes, with a solution that makes your data engineers and your analysts more productive on day 1. Instead of using ETL and custom scripts to move your data between different environments, Dremio connects to your data sources directly, and automatically creates a highly optimized cache that makes even your biggest data feel small, approachable, and interactive. Dremio supports all your favorite BI tools, and advanced languages like Python/Pandas, R, and Apache Spark.</p>
+
+<p class="blue"><strong>We see a wide range of applications, but here are a few popular first projects:</strong></p>
+
+<ul>
+  <li><strong>BI on Non-Relational Data.</strong> Fast access to Elasticsearch, MongoDB, HDFS, S3, plus joins to relational data.</li>
+  <li><strong>Autonomous Data Acceleration.</strong> Make PB-scale queries fast, without cubes or aggregation tables.</li>
+  <li><strong>Self-Service Data.</strong> Empower IT and analysts to discover, curate, accelerate, and share data.</li>
+  <li><strong>The Data Graph.</strong> Lineage of data flows, data reshaping, sharing, and access patterns</li>
+</ul>
+
+<h3 id="want-to-learn-more">Want to Learn More?</h3>
+<p>CTA - gate to access white paper or recorded webinar</p>
+
+<ul>
+  <li>Bi/olap  on hadoop</li>
+  <li>Data prep</li>
+  <li>Data warehouse</li>
+  <li>Etl</li>
+  <li>Data virtualization</li>
+  <li>Sql on hadoop</li>
+</ul>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="pagefoot">
+	<div class="container">
+		
+	   	<h3>
+			<a href="/">Dremio</a>
+	   	</h3>
+	   	<nav class="sitemap">
+			<ul>
+				
+				<li>
+				  	<a href="/product/" class=" ">Product</a>
+				</li>
+				
+				<li>
+				  	<a href="/resources/" class=" ">Resources</a>
+				</li>
+				
+				<li>
+				  	<a href="https://github.com/dremio" class=" ">GitHub</a>
+				</li>
+				
+			</ul>
+			<ul>
+				
+				<li>
+				  	<a href="/careers/" class=" ">Careers</a>
+				</li>
+				
+				<li>
+				  	<a href="/about/" class=" ">About</a>
+				</li>
+				
+				<li>
+				  	<a href="/the-latest/" class=" ">The Latest</a>
+				</li>
+				
+			</ul>
+			<ul>
+				
+				<li>
+				  	<a href="/partners/" class=" ">Partners</a>
+				</li>
+				
+				<li>
+				  	<a href="/faq/" class=" ">FAQ</a>
+				</li>
+				
+			</ul>
+			<form>
+				<label>
+					<span>Get updates</span>
+					<input type="email">
+					<span>your@email.com</span>
+				</label>
+				<button type="submit" class="btn blue">Signup</button>
+			</form>
+		</nav>
+		<div class="contact">
+			<p>
+				883 N Shoreline Boulevard C
+				<br>100 Mountain View, CA 94043
+				<br>
+				<br>+1(650) 691 8642
+				<br><a href="mailto:contact@dremio.com">contact@dremio.com</a>
+			</p>
+		</div>
+		<nav class="social">
+			<ul>
+				<li>
+					<a href="#" class="fb">Facebook</a>
+				</li>
+				<li>
+					<a href="#" class="tw">Twitter</a>
+				</li>
+<!-- 				<li>
+					<a href="#">GitHub</a>
+				</li> -->
+				<li>
+					<a href="#" class="li">LinkedIn</a>
+				</li>
+			</ul>
+		</nav>
+		<nav class="legal">
+			<p>&copy; 2016 Dremio. All Rights Reserved</p>
+			<ul>
+				<li>
+					<a href="/privacy/">Privacy</a>
+				</li>
+				<li>
+					<a href="/legal/">Legal</a>
+				</li>
+			</ul>
+		</nav>
+
+	</div>
+</footer>
+</body>
+</html>

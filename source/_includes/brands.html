@@ -1,0 +1,5 @@
+<ul class="brands">
+{% for brand in site.data.brands[include.group] %}
+	<li><img src="{{brand.image}}" title="{{brand.name}}"></li>
+{% endfor %}
+</ul>

@@ -1,0 +1,15 @@
+- label: Make Big Data Feel Small
+  content: Easy, approachable, and interactive, no matter how many terabytes, no matter where it runs. Dremio makes your favorite analytical tools better.
+  image: /img/home/make-big-data-feel-small.svg
+- label: Bring Agility to Your Analytics
+  content: No ETL, no data warehouse, no aggregation tables. Dremio transparently and effortlessly enables unprecedented time to insight.
+  image: /img/home/bring-agility-tp-your-analytics.svg
+- label: Your Data, Your Tools, Only Better
+  content: Connects modern and traditional data systems to your favorite BI and data science tools. Dremio simplifies and accelerates your analytics.
+  image: /img/home/your-data-your-tools.svg
+- label: Embrace Self Service, With Full Control
+  content: Dremio helps your teams help themselves, while extending your governance and security controls.
+  image: /img/home/embrace-self-service.svg
+- label: Open Source, For Everyone
+  content: Designed to be your default for powering analytics across all your data, and licensed to become everyone’s standard.
+  image: /img/home/open-source-for-everyone.svg

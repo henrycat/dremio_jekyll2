@@ -1,0 +1,29 @@
+header:
+  - title: Product
+    link: /product/
+  - title: Resources
+    link: /resources/
+  - title: GitHub
+    link: https://github.com/dremio
+  - title: Careers
+    link: /careers/
+  - title: Download
+    link: /download/
+    class: btn
+footer:
+  - title: Product
+    link: /product/
+  - title: Resources
+    link: /resources/
+  - title: GitHub
+    link: https://github.com/dremio
+  - title: Careers
+    link: /careers/
+  - title: About
+    link: /about/
+  - title: The Latest
+    link: /the-latest/
+  - title: Partners
+    link: /partners/
+  - title: FAQ
+    link: /faq/

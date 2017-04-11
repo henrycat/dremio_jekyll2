@@ -1,0 +1,80 @@
+<footer class="pagefoot">
+	<div class="container">
+		{% if page.footer %}
+		<div class="message">
+			{% include {{ page.footer}} %}
+		</div>
+		{% endif %}
+	   	<h3>
+			<a href="{{ site.path }}/">{{ site.title }}</a>
+	   	</h3>
+	   	<nav class="sitemap">
+			<ul>
+				{% for link in site.data.nav.footer offset:0 limit:3 %}
+				<li>
+				  	<a href="{{link.link}}" class="{{ link.class }} {% if link.title == page.title %} active {% endif %}">{{ link.title }}</a>
+				</li>
+				{% endfor %}
+			</ul>
+			<ul>
+				{% for link in site.data.nav.footer offset:3 limit:3 %}
+				<li>
+				  	<a href="{{link.link}}" class="{{ link.class }} {% if link.title == page.title %} active {% endif %}">{{ link.title }}</a>
+				</li>
+				{% endfor %}
+			</ul>
+			<ul>
+				{% for link in site.data.nav.footer offset:6 limit:3 %}
+				<li>
+				  	<a href="{{link.link}}" class="{{ link.class }} {% if link.title == page.title %} active {% endif %}">{{ link.title }}</a>
+				</li>
+				{% endfor %}
+			</ul>
+			<form>
+				<label>
+					<span>Get updates</span>
+					<input type="email">
+					<span>your@email.com</span>
+				</label>
+				<button type="submit" class="btn blue">Signup</button>
+			</form>
+		</nav>
+		<div class="contact">
+			<p>
+				883 N Shoreline Boulevard C
+				<br>100 Mountain View, CA 94043
+				<br>
+				<br>+1(650) 691 8642
+				<br><a href="mailto:contact@dremio.com">contact@dremio.com</a>
+			</p>
+		</div>
+		<nav class="social">
+			<ul>
+				<li>
+					<a href="#" class="fb">Facebook</a>
+				</li>
+				<li>
+					<a href="#" class="tw">Twitter</a>
+				</li>
+<!-- 				<li>
+					<a href="#">GitHub</a>
+				</li> -->
+				<li>
+					<a href="#" class="li">LinkedIn</a>
+				</li>
+			</ul>
+		</nav>
+		<nav class="legal">
+			<p>&copy; 2016 Dremio. All Rights Reserved</p>
+			<ul>
+				<li>
+					<a href="{{ site.path }}/privacy/">Privacy</a>
+				</li>
+				<li>
+					<a href="{{ site.path }}/legal/">Legal</a>
+				</li>
+			</ul>
+		</nav>
+
+	</div>
+</footer>

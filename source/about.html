@@ -1,0 +1,67 @@
+---
+layout: default
+title: About
+nav: trans-light
+permalink: /about/
+---
+
+<div class="headsplash type-2">
+	<div class="container">
+		<div class="content">
+			<h1>Dremio is a fundamentally new approach to data.</h1>
+			<p>We started Dremio to shatter a 30 year old paradigm that holds virtually every company back. Removing barriers, accelerating time to insight, putting control in the hands of the user. That's Dremio.</p>
+		</div>
+		<div class="office-photo-stack half-white">
+			<img src="/img/about/office-1.jpg" alt="office photo 1">
+			<img src="/img/about/office-2.jpg" alt="office photo 2">
+		</div>
+	</div>
+</div>
+<div class="container narrow content pull-center section">
+	<p class="bigger">This is an amazing place to work. Bright, caring people. High standards. An exceptional opportunity to own part of an important technology that is used by the world's leading companies for essential workloads. We care deeply about our employees, their families, and our customers.</p>
+</div>
+
+<div class="container tall-section">
+	<div class="content pull-center">
+		<h2>Leadership Team</h2>
+		<ul class="leadership-grid pull-center">
+		{% for bio in site.data.leadership %}
+		  <li>
+		  	<div class="img">
+		  		<img src="{{bio.image}}">
+		  	</div>
+		    <h4>{{bio.name}}<small>{{bio.title}}</small></h4>
+		    <p>{{bio.summary}}</p>
+		    <ul class="social">
+		    	<li><a href="{{bio.social.fb}}" class="fb">Facebook</a></li>
+		    	<li><a href="{{bio.social.tw}}" class="tw">Twitter</a></li>
+		    	<li><a href="{{bio.social.ln}}" class="li">LinkedIn</a></li>
+		    </ul>
+		  </li>
+		{% endfor %}
+		</ul>
+	</div>
+</div>
+
+<div class="container section">
+	<div class="content pull-center">
+		<h2>Investors</h2>
+		<ul class="leadership-grid pull-center bigger">
+		{% for company in site.data.investors %}
+		  <li>
+		  	<div class="img">
+		  		<img src="{{company.image}}" alt="{{company.title}}">
+		  	</div>
+		  </li>
+		{% endfor %}
+		</ul>
+	</div>
+</div>
+
+<div class="container narrow tall-section">
+	<div class="content pull-center">
+		<h2>Join Our Team</h2>
+		<p>Dremio's team includes leaders from Hortonworks, MongoDB, MapR, Mesosphere, and Apple. We've been at the forefront of data, open source, and user experience for over a decade. Join us!</p>
+		<p class="btn-bar"><a href="/careers/" class="btn">View Open Positions</a></p>
+	</div>
+</div>

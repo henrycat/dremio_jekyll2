@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<div class="post">
+	<div class="container">
+	<nav class="breadcrumbs">
+		<a href="/the-latest" class="back">Back</a>
+	</nav>
+	<article>
+		<h1 class='post-title'>{{ page.title }}</h1>
+		<div class='post-author-img'><img src="{{ page.authorImg }}"></div>
+		<div class="post-meta">
+			<span class="author">{{ page.author }}</span>
+			<span class="date">{{ page.date | date: "%b %-d, %Y" }}</span>
+		</div>
+		<div class="content">
+			{{ content }}
+		</div>
+	</article>
+	</div>
+</div>
+
+<div class="container">
+	<div class="blog-more">
+	{% for post in site.posts limit:4 %}
+		<article>
+			<a class="img" href="{{ site.path }}{{ post.url }}"><img src="{{ post.image  }}"></a>
+			<p class="date">{{ post.date | date: "%b %-d, %Y" }}</p>
+			<h4><a href="{{ site.path }}{{ post.url }}">{{ post.title }}</a></h4>
+			<p class="excerpt">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+		</article>
+	{% endfor %}
+	</div>
+</div>
+

@@ -1,0 +1,24 @@
+group1:
+  - name: Airbnb
+    image: '/img/partners/airbnb.png'
+  - name: Conde Nast
+    image: /img/partners/condenast.png
+  - name: Ebay
+    image: /img/partners/ebay.png
+  - name: Google
+    image: /img/partners/google.png
+  - name: Stanford
+    image: /img/partners/stanford.png
+group2:
+  - name: Microsoft
+    image: /img/partners/microsoft.png
+  - name: Apple
+    image: /img/partners/apple.png
+  - name: Dribbble
+    image: /img/partners/dribbble.png
+  - name: Spotify
+    image: /img/partners/spotify.png
+  - name: Github
+    image: /img/partners/github.png
+  - name: Envato
+    image: /img/partners/envato.png

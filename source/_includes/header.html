@@ -1,0 +1,15 @@
+<header class="pagehead {{ page.nav }}">
+	<div class="container">
+		<h3><a href="{{ site.path }}/">{{ site.title }}</a></h3>
+		<label for="nav-toggle"><span></span>Toggle Navigation Menu</label>
+	</div>
+	<nav class="container">
+		<ul>
+			{% for link in site.data.nav.header %}
+			  <li>
+			  	<a href="{{link.link}}" class="{{ link.class }} {% if link.title == page.title %} active {% endif %}">{{ link.title }}</a>
+			  </li>
+			{% endfor %}
+		</ul>
+	</nav>
+</header>

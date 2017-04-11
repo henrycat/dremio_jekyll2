@@ -1,0 +1,59 @@
+---
+layout: default
+title: Careers
+nav: trans-light
+permalink: /careers/
+footer: start-seeing-value.html
+---
+
+<div class="headsplash type-1">
+  <div class="container">
+    <div class="content pull-center">
+      {% capture my_include %}{% include join-our-team.md %}{% endcapture %}
+      {{ my_include | markdownify }}
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="tall-section">
+    <div class="content pull-center">
+      <h3>What We Value</h3>
+    </div>
+    <ul class="tout-grid pull-center">
+    {% for tout in site.data.career-touts %}
+      <li>
+        <img src="{{tout.image}}">
+        <h4>{{tout.label}}</h4>
+        <p>{{tout.content}}</p>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+  <div class="tall-section pull-center">
+    <div class="content section">
+      <h3>Open Positions</h3>
+    </div>
+    <ul class="faq">
+    {% for section in site.data.career-positions %}
+      <li>
+        <h4>{{section.label}}</h4>
+      </li>
+      {% for position in section.positions %}
+        <li>
+          <input type="checkbox">
+          <h4>
+            {{position.label}}
+            <span>{{position.location}} / {{position.time}}</span>
+          </h4>
+          <div class="content">
+            {{position.description | markdownify}}
+          </div>
+        </li>
+      {% endfor %}
+    {% endfor %}
+    </ul>
+
+  </div>
+</div>

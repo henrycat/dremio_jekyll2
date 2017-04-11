@@ -1,0 +1,23 @@
+---
+layout: default
+title: Product
+nav: trans-light
+permalink: /product/
+---
+
+<div class="headsplash type-0">
+	<div class="container content pull-center">
+		<h1>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</h1>
+	</div>
+</div>
+
+<div class="container section">
+	{% for screen in site.data.product-screens %}
+	  <div class="product-screen tall-section">
+	    <h4>{{screen.label}}</h4>
+	    <span><img src="{{screen.image}}"></span>
+	    <p>{{screen.content}}</p>
+	  </div>
+	  <hr>
+	{% endfor %}
+</div>

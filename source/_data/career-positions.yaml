@@ -1,0 +1,76 @@
+- label: Engineering
+  positions:
+    - label: Job Title 1
+      location: Job location 1
+      time: Full-Time
+      description: |
+        Dremio was founded in 2015 by Tomer Shiran and Jacques Nadeau. Dremio’s founding team, which includes the creators of Apache Arrow, Apache Drill and Apache Parquet, is on track to transform the data analytics industry with category-defining product.
+        At about 20 people strong and growing, Dremio boasts an impressive employee roster. The team includes the creators of Apache Arrow, Apache Drill, Apache Parquet and Oracle’s Flash Cache, as well as the tech lead for Twitter’s analytics data pipeline, the tech lead of Twitter’s data ingestion and replication, and the lead developer of Twitter’s data exploration & management UI. For example, Julien Le Dem, who is an architect at Dremio, led Twitter’s analytics data pipeline and created Apache Parquet, the de-facto standard storage format for Big Data.
+        Dremio is still in stealth mode and currently based in Mountain View, CA. We raised a $10 million Series A from two top tier VC Firms, Redpoint Ventures and Lightspeed Venture Partners.
+        In this role, you will help automate and streamline processes, build and maintain tools for deployment, and troubleshoot issues in the Dremio development, test and production environments. The ideal DevOps Engineer will have a thorough understanding of software build and release processes, experience with databases, big data, or distributed systems and have a general desire to move fast.
+        If you are looking to play an integral part in building a new category for the data analytics space, join our team! 
+
+        **Responsibilities**
+
+        - Implementation of build and release automation scripts for packaging
+        - Management and extension of build and continuous integration infrastructure (Jenkins)
+        - Management of source, artifacts and packages repositories
+        - Working with development teams to ensure standardisation and automation of software build and release processes Recommend and balance cloud and colocation resource usage including networking, virtualisation and services infrastructure Software deployment and configuration management
+        
+        **Requirements**
+
+        - Experience with Linux platforms (architecture, design, administration, distributed systems, release management) Programming knowledge of Java, Python, or other open source
+        - Strong experience with one or more scripting languages
+        - Understanding of cloud server environment (preferably AWS)
+        - Good knowledge of infrastructure services (mail servers, LDAP servers, file servers, web servers) Subversion and/or Git
+        - Proactive attitude and strong desire to propose and implement new solutions and better processes [Bonus] Experience with Jira/Ansible/Chef/Puppet
+    - label: Job Title 2
+      location: Job location
+      time: Full-Time
+      description: |
+        Dremio was founded in 2015 by Tomer Shiran and Jacques Nadeau. Dremio’s founding team, which includes the creators of Apache Arrow, Apache Drill and Apache Parquet, is on track to transform the data analytics industry with category-defining product.
+        At about 20 people strong and growing, Dremio boasts an impressive employee roster. The team includes the creators of Apache Arrow, Apache Drill, Apache Parquet and Oracle’s Flash Cache, as well as the tech lead for Twitter’s analytics data pipeline, the tech lead of Twitter’s data ingestion and replication, and the lead developer of Twitter’s data exploration & management UI. For example, Julien Le Dem, who is an architect at Dremio, led Twitter’s analytics data pipeline and created Apache Parquet, the de-facto standard storage format for Big Data.
+        Dremio is still in stealth mode and currently based in Mountain View, CA. We raised a $10 million Series A from two top tier VC Firms, Redpoint Ventures and Lightspeed Venture Partners.
+        In this role, you will help automate and streamline processes, build and maintain tools for deployment, and troubleshoot issues in the Dremio development, test and production environments. The ideal DevOps Engineer will have a thorough understanding of software build and release processes, experience with databases, big data, or distributed systems and have a general desire to move fast.
+        If you are looking to play an integral part in building a new category for the data analytics space, join our team! 
+
+        **Responsibilities**
+
+        - Implementation of build and release automation scripts for packaging
+        - Management and extension of build and continuous integration infrastructure (Jenkins)
+        - Management of source, artifacts and packages repositories
+        - Working with development teams to ensure standardisation and automation of software build and release processes Recommend and balance cloud and colocation resource usage including networking, virtualisation and services infrastructure Software deployment and configuration management
+        
+        **Requirements**
+
+        - Experience with Linux platforms (architecture, design, administration, distributed systems, release management) Programming knowledge of Java, Python, or other open source
+        - Strong experience with one or more scripting languages
+        - Understanding of cloud server environment (preferably AWS)
+        - Good knowledge of infrastructure services (mail servers, LDAP servers, file servers, web servers) Subversion and/or Git
+        - Proactive attitude and strong desire to propose and implement new solutions and better processes [Bonus] Experience with Jira/Ansible/Chef/Puppet
+- label: Product Management
+  positions:
+    - label: Job Title 3
+      location: Job location 3
+      time: Full-Time
+      description: |
+        Dremio was founded in 2015 by Tomer Shiran and Jacques Nadeau. Dremio’s founding team, which includes the creators of Apache Arrow, Apache Drill and Apache Parquet, is on track to transform the data analytics industry with category-defining product.
+        At about 20 people strong and growing, Dremio boasts an impressive employee roster. The team includes the creators of Apache Arrow, Apache Drill, Apache Parquet and Oracle’s Flash Cache, as well as the tech lead for Twitter’s analytics data pipeline, the tech lead of Twitter’s data ingestion and replication, and the lead developer of Twitter’s data exploration & management UI. For example, Julien Le Dem, who is an architect at Dremio, led Twitter’s analytics data pipeline and created Apache Parquet, the de-facto standard storage format for Big Data.
+        Dremio is still in stealth mode and currently based in Mountain View, CA. We raised a $10 million Series A from two top tier VC Firms, Redpoint Ventures and Lightspeed Venture Partners.
+        In this role, you will help automate and streamline processes, build and maintain tools for deployment, and troubleshoot issues in the Dremio development, test and production environments. The ideal DevOps Engineer will have a thorough understanding of software build and release processes, experience with databases, big data, or distributed systems and have a general desire to move fast.
+        If you are looking to play an integral part in building a new category for the data analytics space, join our team! 
+
+        **Responsibilities**
+
+        Implementation of build and release automation scripts for packaging
+        Management and extension of build and continuous integration infrastructure (Jenkins)
+        Management of source, artifacts and packages repositories
+        Working with development teams to ensure standardisation and automation of software build and release processes Recommend and balance cloud and colocation resource usage including networking, virtualisation and services infrastructure Software deployment and configuration management
+        
+        **Requirements**
+
+        Experience with Linux platforms (architecture, design, administration, distributed systems, release management) Programming knowledge of Java, Python, or other open source
+        Strong experience with one or more scripting languages
+        Understanding of cloud server environment (preferably AWS)
+        Good knowledge of infrastructure services (mail servers, LDAP servers, file servers, web servers) Subversion and/or Git
+        Proactive attitude and strong desire to propose and implement new solutions and better processes [Bonus] Experience with Jira/Ansible/Chef/Puppet

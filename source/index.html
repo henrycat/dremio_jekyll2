@@ -1,0 +1,88 @@
+---
+layout: default
+nav: trans-light
+footer: start-seeing-value.html
+---
+
+<div class="headsplash type-1">
+	<div class="container content">
+		<div class="missing-link">
+			<h1>The missing<br> link in modern data</h1>
+			<p>Between the apps that power your business, and the tools your analysts use to make sense of it. Dremio is the industry's first <strong>analyst cloud.</strong></p>
+			<p>
+				<a href="#" class="btn white">Download</a>
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	{% include brands.html group='group1' %}
+	<hr>
+	<div class="services-grid section">
+	{% for tout in site.data.home-touts %}
+	  <div>
+	  	<img src="{{tout.image}}">
+	  	<div>
+	    	<h4>{{tout.label}}</h4>
+	    	<p>{{tout.content}}</p>
+	    </div>
+	  </div>
+	{% endfor %}
+	</div>
+</div>
+
+<div class="blue-box feature-box">
+	<div class="container">
+		<div class="content pull-center">
+			<h3>Makes your data, analysts, and data scientists faster.</h3>
+			<p>Dremio makes all your data self service. Run SQL from any tool against data from any source, accelerated by Dremio.</p>
+			<span class="half-white">
+				<img src="/img/screen-1.png" class="">
+			</span>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<ul class="tout-grid pull-center">
+	{% for tout in site.data.home-grid %}
+	  <li>
+	  	<img src="{{tout.image}}">
+	    <h4>{{tout.label}}</h4>
+	    <p>{{tout.content}}</p>
+	  </li>
+	{% endfor %}
+	</ul>
+</div>
+
+<div class="light-grey-box feature-box">
+	<div class="container">
+		<div class="content pull-center">
+			<h3>Accelerates Modern Data for Any Tool</h3>
+			<p>No matter where your data lives, Dremio makes it fast, scalable, and fully accessible by any SQL tool. We are just getting started.</p>
+			<img src="/img/future-proof.png" class="">
+		</div>
+	</div>
+</div>
+
+<div class="dark-grey-box feature-box">
+	<div class="container">
+		<div class="content pull-center">
+			<h3>Data Loves Dremio</h3>
+			<p>Your teams work with data, and Dremio makes them more productive. See why Data Engineers and Analysts love Dremio too.</p>
+			<ul class="nav-list">
+				<li><a href="#">Data Engineers</a></li>
+				<li><a href="#">Analysts</a></li>
+			</ul>
+			<span class="iframe">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/8fvTxv46ano" frameborder="0" allowfullscreen></iframe>
+			</span>
+			<p class="section"><a href="#">Learn more</a> about what makes dremio unique and see it in action</p>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	{% include brands.html group='group2' %}
+</div>

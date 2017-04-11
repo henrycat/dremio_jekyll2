@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Tableau on S3 - Dremio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="shortcut icon" href="/favicons/favicon.ico">
+	<link rel="manifest" href="/favicons/manifest.json">
+	<link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon.png">
+	<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-config" content="/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans:300,400,600" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/css/style.css" >
+	<link rel="alternate" type="application/atom+xml" href="/feed.xml" title="News Feed">
+	<script src="http://localhost:5001/livereload.js"></script>
+<script src="http://0.0.0.0:5001/livereload.js"></script></head>
+
+<body class="">
+	<input type="checkbox" id="nav-toggle" name="nav-toggle" value="show">
+	<div id="bodywrap">
+		<header class="pagehead ">
+	<div class="container">
+		<h3><a href="/">Dremio</a></h3>
+		<label for="nav-toggle"><span></span>Toggle Navigation Menu</label>
+	</div>
+	<nav class="container">
+		<ul>
+			
+			  <li>
+			  	<a href="/product/" class=" ">Product</a>
+			  </li>
+			
+			  <li>
+			  	<a href="/resources/" class=" ">Resources</a>
+			  </li>
+			
+			  <li>
+			  	<a href="https://github.com/dremio" class=" ">GitHub</a>
+			  </li>
+			
+			  <li>
+			  	<a href="/careers/" class=" ">Careers</a>
+			  </li>
+			
+			  <li>
+			  	<a href="/download/" class="btn ">Download</a>
+			  </li>
+			
+		</ul>
+	</nav>
+</header>
+
+		<div id="content" class="">
+			<div class="content tall-section container ">
+				<div class="markdown ">
+					<h3 id="tableau-on-s3">Tableau on S3</h3>
+
+<p class="solutions">Connect Tableau to Amazon S3. Start running interactive visualizations in minutes.</p>
+
+<p class="solutions buttons"><a href="/downloads/">Download Dremio</a></p>
+
+<h3 id="running-tableaui-on-s3-is-a-slow-complex-multi-step-process">Running TableauI on S3 is a Slow, Complex, Multi-Step Process</h3>
+<p>Amazon S3 has quickly become indispensable for many modern applications. It provides unlimited scalability, reliability, a simple API, and it is unbeatable in terms of cost. For architects S3 is an important tool that complements other data infrastructure - it’s where your data “lands” initially, and then later is “picked up” for processing, then moved into RDS, EMR, or your Hadoop cluster.</p>
+
+<p>If you’re using Tableau, then one of the end points of your data pipelines is a relational database like RDS, because that’s how Tableau works best. But think about all the steps it took to get the data from S3 into Tableau and the hands of your analysts.</p>
+
+<p>What if you could run Tableau on S3 directly, with an interactive experience, and without making any compromises in functionality? You could dramatically reduce the time and complexity to work with your data, and shrink your costs along the way. That’s Dremio.</p>
+
+<p><img src="/img/solutions/s3.png" alt="alt text here" /></p>
+
+<h3 id="dremio-simplifies-and-accelerates-analytics-for-amazon-s3">Dremio Simplifies and Accelerates Analytics for Amazon S3</h3>
+<p>Dremio connects Tableau to S3, and accelerates your data and queries. SQL queries that are issued to Dremio by Tableau are compiled into Dremio’s distributed SQL execution engine, and pushed down to file reads in a massively parallel process. No matter how your data is stored, Dremio gives you full SQL access, including joins, aggregations, and sub-queries.</p>
+
+<h3 id="accelerate-your-data">Accelerate Your Data</h3>
+<p>With Dremio’s autonomous cache, your data is automatically optimized in columnarized, compressed data structures called reflections. Dremio’s reflections are stored in S3, and they can accelerate your analytics by 10-1000x. <a href="/product/">Learn more about how Dremio works</a>.</p>
+
+<h3 id="not-just-s3-all-your-data-sources">Not Just S3, All Your Data Sources</h3>
+<p>Dremio is more than a solution for S3 - it works for all your data sources. Relational databases,<a href="/solutions/tableau-on-hadoop/">Hadoop</a>, <a href="/solutions/tableau-on-mongodb/">MongoDB</a>, <a href="/solutions/tableau-on-elasticsearch.html">Elasticsearch,</a> and more. Dremio gives you the same rich query access to any source, and accelerates your data to make analysis interactive and fun.</p>
+
+<h4 id="technical-details-for-s3">Technical Details for S3</h4>
+<ul>
+  <li>Supports Elasticsearch 2.0 and later.</li>
+  <li>Dremio runs on EC2 instances, with data stored in S3.</li>
+  <li><a href="docs">Documentation</a> for Dremio and S3.</li>
+</ul>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="pagefoot">
+	<div class="container">
+		
+	   	<h3>
+			<a href="/">Dremio</a>
+	   	</h3>
+	   	<nav class="sitemap">
+			<ul>
+				
+				<li>
+				  	<a href="/product/" class=" ">Product</a>
+				</li>
+				
+				<li>
+				  	<a href="/resources/" class=" ">Resources</a>
+				</li>
+				
+				<li>
+				  	<a href="https://github.com/dremio" class=" ">GitHub</a>
+				</li>
+				
+			</ul>
+			<ul>
+				
+				<li>
+				  	<a href="/careers/" class=" ">Careers</a>
+				</li>
+				
+				<li>
+				  	<a href="/about/" class=" ">About</a>
+				</li>
+				
+				<li>
+				  	<a href="/the-latest/" class=" ">The Latest</a>
+				</li>
+				
+			</ul>
+			<ul>
+				
+				<li>
+				  	<a href="/partners/" class=" ">Partners</a>
+				</li>
+				
+				<li>
+				  	<a href="/faq/" class=" ">FAQ</a>
+				</li>
+				
+			</ul>
+			<form>
+				<label>
+					<span>Get updates</span>
+					<input type="email">
+					<span>your@email.com</span>
+				</label>
+				<button type="submit" class="btn blue">Signup</button>
+			</form>
+		</nav>
+		<div class="contact">
+			<p>
+				883 N Shoreline Boulevard C
+				<br>100 Mountain View, CA 94043
+				<br>
+				<br>+1(650) 691 8642
+				<br><a href="mailto:contact@dremio.com">contact@dremio.com</a>
+			</p>
+		</div>
+		<nav class="social">
+			<ul>
+				<li>
+					<a href="#" class="fb">Facebook</a>
+				</li>
+				<li>
+					<a href="#" class="tw">Twitter</a>
+				</li>
+<!-- 				<li>
+					<a href="#">GitHub</a>
+				</li> -->
+				<li>
+					<a href="#" class="li">LinkedIn</a>
+				</li>
+			</ul>
+		</nav>
+		<nav class="legal">
+			<p>&copy; 2016 Dremio. All Rights Reserved</p>
+			<ul>
+				<li>
+					<a href="/privacy/">Privacy</a>
+				</li>
+				<li>
+					<a href="/legal/">Legal</a>
+				</li>
+			</ul>
+		</nav>
+
+	</div>
+</footer>
+</body>
+</html>

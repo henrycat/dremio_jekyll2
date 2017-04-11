@@ -1,0 +1,41 @@
+- name: Tomer Shiran
+  title: Founder & CEO
+  image: '/img/about/tomer.jpg'
+  summary: Held product leadership roles at MapR, Microsoft, and IBM. Originally from Israel. Avid skier.
+  social:
+    fb: https://facebook.com/something
+    tw: https://twitter.com/something
+    ln: https://linkedin.com/something
+- name: Jacques Nadeau
+  title: Founder & CTO
+  image: '/img/about/jacques.jpg'
+  summary: Creator and PMC Chair of Apache Arrow and Apache Drill. Ran the distributed systems team at MapR.
+  social:
+    fb: https://facebook.com/something
+    tw: https://twitter.com/something
+    ln: https://linkedin.com/something
+- name: Julien Le Dem
+  title: Principal Architect
+  image: '/img/about/julien.jpg'
+  summary: Creator and PMC Chair of Apache Parquet. Formerly led Twitter’s data analytics pipeline.
+  social:
+    fb: https://facebook.com/something
+    tw: https://twitter.com/something
+    ln: https://linkedin.com/something
+- name: Ron Avnur
+  title: VP Engineering
+  image: '/img/about/tomer.jpg'
+  summary: Previously VP Product, MongoDB. Previously VP Engineering, MarkLogic.
+  social:
+    fb: https://facebook.com/something
+    tw: https://twitter.com/something
+    ln: https://linkedin.com/something
+- name: Kelly Stirman
+  title: CMO
+  image: '/img/about/tomer.jpg'
+  summary: Previously VP Strategy, MongoDB. Previously Field CTO, MarkLogic.
+  social:
+    fb: https://facebook.com/something
+    tw: https://twitter.com/something
+    ln: https://linkedin.com/something
+

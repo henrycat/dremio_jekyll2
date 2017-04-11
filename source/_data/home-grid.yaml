@@ -1,0 +1,12 @@
+- label: All your data in one place
+  content: Dremio accelerates analytics for any database, Hadoop, NoSQL, or file system.
+  image: /img/home/all-your-data-icon-1.svg
+- label: Make your teams more productive
+  content: Empower your data engineers, analysts, and data scientists to discover, curate, and share, instantly.
+  image: /img/home/make-your-teams-icon-2.svg
+- label: Accelerate your favorite tools
+  content: Dremio makes all your favorite tools better, including BI tools like Tableau, Python, R, and Spark.
+  image: /img/home/accelerate-icon-3.svg
+- label: Self service, for everybody
+  content: Anyone should be able to work with data, and Dremio makes it easy for everybody.
+  image: /img/home/open-source-for-everyone.svg

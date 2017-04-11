@@ -1,0 +1,31 @@
+---
+layout: default
+title: FAQ
+nav: white
+footer: start-seeing-value.html
+permalink: /faq/
+---
+
+<div class="simplesplash">
+	<div class="container">
+		<div>
+			<h1>FAQ</h1>
+			{% include faq-intro.html %}
+		</div>
+	</div>
+</div>
+
+
+<div class="container section">
+    <ul class="faq">
+		{% for faq in site.data.faqs %}
+		  <li>
+		  	<input type="checkbox">
+		    <h4>{{faq.q}}</h4>
+		    <div>
+		    	<p>{{faq.a}}</p>
+		    </div>
+		  </li>
+		{% endfor %}
+	</ul>
+</div>

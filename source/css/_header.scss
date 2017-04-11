@@ -1,0 +1,234 @@
+#nav-toggle {
+	visibility: visible;
+	display: block;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	z-index: 9;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.pagehead {
+	h3 {
+		position: relative;
+		a {
+			display: block;
+			background-image: url('/img/dremio-logo-dark.png');
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center top;
+			text-indent: -10000px;
+		}
+	}
+	&.trans-light {
+		background: transparent;
+		@media screen and (min-width: 780px){
+			color: white;
+			border-bottom: none;
+		}
+		h3 {
+			a {
+				background-image: url('/img/dremio-logo.png');
+			}
+		}
+		li {
+			.btn {
+				color: white;
+				border-color: white;
+			}
+			a {
+				opacity: 0.8;
+			}
+			a.active,
+			a:hover {
+				opacity: 1;
+			}
+		}
+		label {
+			& > span,
+			&:before,
+			&:after {
+				background: white;
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 779px){
+	.pagehead {
+		position: fixed;
+		background: #fff;
+		display: block;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 4em;
+		z-index: 10;
+		@include clearfix;
+		.container {
+			height: 0;
+		}
+		h3 {
+			float: left;
+			top: 0.5em;
+			a {
+				width: 8em;
+				height: 2.6em;
+			}
+		}
+		ul {
+			position: relative;
+			top: 3em;
+			display: block;
+			letter-spacing: 1em;
+		}
+		nav.container {
+			position: absolute;
+			background: white;
+			color: #222;
+			height: 100vh;
+			right: 0;
+			width: 16em;
+			padding: 0 1.5em;
+			transform: translateX(16em);
+			transition: transform 0.3s ease-in-out;
+		}
+		li {
+			display: block;
+			font-size: 1.3em;
+			a:not(.btn) {
+				display: block;
+				letter-spacing: 0.05em;
+				//font-size: 0.666em;
+				padding: 0.666em 1.5em;
+			}
+			.btn {
+				display: block;
+				margin-top: 0.5em;
+				margin-left: 0.75em;
+				letter-spacing: 0.05em;
+				float: left;
+				padding: 0.66em 1.5em;
+			}
+		}
+		label {
+			position: absolute;
+			top: 0.75em;
+			right: 1.35em;
+			text-indent: -10000px;
+			font-size: 1.5em;
+			width: 1em;
+			height: 1em;
+			cursor: pointer;
+			display: block;
+			z-index: 10;
+			& > span,
+			&:before,
+			&:after {
+				display: block;
+				position: absolute;
+				content: '';
+				width: 100%;
+				height: 4px;
+				right: 0;
+				background: black;
+				transition: opacity 0.3s ease-in-out, background 0.3s ease-in-out, transform 0.3s ease-in-out;
+			}
+			&:before {
+				top: 0;
+			}
+			& > span {
+				margin-top: -2px;
+				top: 50%;
+			}
+			&:after {
+				bottom: 0;
+			}
+		}
+	}
+	#nav-toggle:checked {
+		opacity: 1;
+		& + #bodywrap .pagehead label {
+			span {
+				opacity: 0;
+			}
+			&:before,
+			&:after {
+				background: black;
+			}
+			&:before {
+				transform: translateY(0.41em) rotate(-45deg);
+			}
+			&:after {
+				transform: translateY(-0.41em) rotate(45deg);
+			}
+		}
+		& + #bodywrap nav.container {
+			transform: translateX(0)
+		}
+		&:after {
+			display: block;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			content: '';
+			width: 100vw;
+			height: 100vh;
+			background: rgba(0,0,0,0.5);	
+		}
+	}
+}
+@media screen and (min-width: 780px){
+	.pagehead {
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 4.5em;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		border-bottom: 1px solid #ccc;
+		z-index: 10;
+		background: white;
+		@include clearfix;
+		.container {
+			height: 0;
+		}
+		h3 {
+			float: left;
+			a {
+				background-position: center center;
+				width: 8em;
+				height: 2.5em;
+			}
+		}
+		ul {
+			float: right;
+			position: relative;
+			top: -2.66em;
+			display: block;
+			letter-spacing: 1em;
+		}
+		li {
+			display: inline-block;
+			letter-spacing: 0.05em;
+			a:not(.btn) {
+				display: block;
+				padding: 0.666em 1.5em;
+			}
+			.btn {
+				display: block;
+				color: $ltblue;
+				border-color: $ltblue;
+			}
+		}
+		label {
+			display: none;
+		}
+	}
+}
